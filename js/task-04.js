@@ -4,9 +4,11 @@ const incrBtn = document.querySelector('button[data-action="increment"]');
 const spanEl = document.querySelector("#value");
 
 decrBtn.addEventListener("click", () => {
-  spanEl.textContent = Number(spanEl.textContent) - 1;
+  counterValue -= 1;
+  spanEl.textContent = counterValue;
 });
 
 incrBtn.addEventListener("click", () => {
-  spanEl.textContent = Number(spanEl.textContent) + 1;
+  counterValue += 1;
+  spanEl.textContent = counterValue;
 });
