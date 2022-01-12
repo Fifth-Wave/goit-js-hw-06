@@ -9,7 +9,7 @@ function onSubmit(event) {
   const password = formElements.password.value;
 
   if (!email || !password) {
-    alert("Запорни поля!");
+    alert("Заполни поля!");
   } else {
     const formData = {
       email,
